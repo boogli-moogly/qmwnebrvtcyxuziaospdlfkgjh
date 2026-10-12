@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html> <body> <script>
-const src = "https://cdn.jsdelivr.net/gh/Camzzz-vrgt/Toby-Web/tobywebsinglefile.html";
-fetch(src)
-  .then(r => {
-    if (!r.ok) throw new Error(`Failed to fetch (${r.status})`);
-    return r.text();
-  })
-  .then(html => {
-    document.open();
-    document.write(html);
-    document.close();
-  })
-  .catch(err => {
-    document.body.innerHTML = `
-      <h1>Failed to load Toby Web</h1>
-      <p>${err.message}</p>
-    `;
-  });
-</script> </body> </html>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="72" viewBox="0 0 480 72">
+  <rect width="480" height="72" fill="#0a0a14"/>
+  <text x="20" y="44" fill="#f8f8f8" font-family="monospace" font-size="15">Loading Toby Web...</text>
+  <script><![CDATA[
+    location.href = "https://toby.booksforschool.online/tobywebsinglefile.html";
+  ]]></script>
+</svg>
